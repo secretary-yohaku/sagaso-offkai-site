@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAGAでSAGAそう｜大規模オフ会 in 佐賀</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <!-- 編集しやすい画像：ヒーロー画像（後日差し替え時はここを更新） -->
+        <img src="images/hero.png" alt="ヒーロー画像" class="hero-image">
+        <h1 class="site-title">SAGAでSAGAそう</h1>
+        <p class="site-subtitle">大規模オフ会で「知って、つながって、楽しもう。」</p>
+        <a href="#signup" class="btn btn-primary">参加申し込みはこちら</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="news">
+        <div class="container">
+          <h2 class="section-title">📢 お知らせ</h2>
+          <ul class="news-list">
+            <li class="news-item"><span class="news-date">2026/04/06</span> 参加申込の受付を開始しました</li>
+            <li class="news-item"><span class="news-date">2026/04/01</span> 講義プログラムの一部を公開しました</li>
+            <li class="news-item"><span class="news-date">2026/03/25</span> イベント公式サイトをオープンしました</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hero" aria-label="イベント概要">
+        <div class="container">
+          <h2 class="section-title">4月18日、メートプラザ佐賀で開催</h2>
+          <p class="hero-text">佐賀県で集まるリべシティ会員とその家族のための一大オフ会。</p>
+
+          <!-- 編集しやすいブロック：日時・場所・参加費 -->
+          <ul class="event-details" id="event-details">
+            <li><strong>日時：</strong><span id="event-date">4月18日 10:00〜16:00</span></li>
+            <li><strong>場所：</strong><span id="event-venue">佐賀県 メートプラザ佐賀（佐賀駅徒歩20分）</span></li>
+            <li><strong>住所：</strong><span id="event-address">佐賀市兵庫北3丁目8-40</span></li>
+            <li><strong>参加対象：</strong><span id="event-target">リべシティ会員とその家族</span></li>
+            <li><strong>参加費：</strong><span id="event-fee">開催後にご案内・徴収予定です。事前のお支払いはありません。</span></li>
+          </ul>
+
+          <p class="map-link">
+            <a href="https://maps.app.goo.gl/DxmETX6FCdmUrHg98?g_st=ipc" target="_blank" rel="noopener noreferrer" id="event-map-link">Googleマップで見る</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="concept">
+        <div class="container">
+          <h2 class="section-title">テーマ・コンセプト</h2>
+          <div class="concept-card">
+            <p class="concept-highlights"><strong>SAGAでSAGAそう。知って、つながって、楽しもう。</strong></p>
+            <p>佐賀から、つながる・学ぶ・楽しむ1日へ。</p>
+            <p>このイベントは、学びや出会いを通して、
+            新しい気づきやつながりを楽しめる場を目指しています。</p>
+            <p>副業の第一歩を踏み出したい人も、
+            地元や県外の実践者とつながりたい人も、
+            気軽に参加しながら、自分の選択肢を広げるきっかけを見つけられる1日です。</p>
+            <p>知ること、つながること、楽しむことを通して、
+            これからにつながる出会いやヒントを持ち帰ってもらえたら嬉しいです。</p>
+          </div>
+
+          <h3>こんな人に来てほしい</h3>
+          <ul>
+            <li>副業の一歩目を踏み出したい社会人・学生・子育て世代</li>
+            <li>お金・働き方・暮らし方のヒントを持ち帰りたい人</li>
+            <li>「聞いて終わり」ではなく、行動につなげたい人</li>
+          </ul>
+
+          <h3>当日のイメージ</h3>
+          <div class="image-cards" aria-label="当日のイメージ"> 
+            <div class="image-card">研修室／視聴覚室<br>AI／会計／転職／アパレル・せどり／教育／インスタ／Canva など（予定）</div>
+            <div class="image-card">大会議室<br>中古車購入・維持／ワンパス・Google設定／ハンドメイド展示 等</div>
+            <div class="image-card">多目的室（1F）<br>受付＆休憩</div>
+            <div class="image-card">共有スペース・踊り場<br>個別相談・雑談・写真撮影</div>
+            <div class="image-card">懇親会<br>17:00〜（スナック両子イメージ）</div>
+          </div>
+          <p>講義：50分＋移動10〜15分／最大2講義が同時進行<br>※講師・タイムテーブルは現在調整中です。</p>
+        </div>
+      </section>
+
+      <section class="section" id="lectures">
+        <div class="container">
+          <h2 class="section-title">📚 募集中の講義</h2>
+          <h3 class="lecture-room-label">🏫 研修室</h3>
+          <div class="lecture-cards">
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">あなたの「できた!」を増やす、副業向けChatGPT裏ワザ活用講座</h3>
+              <p class="lecture-card-info">🗓 9:00〜10:50</p>
+              <p class="lecture-card-info">🎤 講師：ダブレイさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats"><span class="badge-full">満席</span> 残席：0名</p>
+              <a href="https://libecity.com/room_list?room_id=AImk3LdY3DPz8z8PrOjd" class="btn btn-disabled btn-sm" aria-disabled="true">受付終了</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">好き・得意・経験をお金に変えるスキル販売入門</h3>
+              <p class="lecture-card-info">🗓 11:00〜11:50</p>
+              <p class="lecture-card-info">🎤 講師：エリさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats"><span class="badge-full">満席</span> 残席：0名</p>
+              <a href="https://libecity.com/room_list?room_id=wD0hTvez3HA1Drk4jFyg" class="btn btn-disabled btn-sm" aria-disabled="true">受付終了</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">日本の高配当株に興味ある人、集まれ～😊0→1やってみようよ</h3>
+              <p class="lecture-card-info">🗓 12:00〜12:50</p>
+              <p class="lecture-card-info">🎤 講師：はじめまして先生さん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats"><span class="badge-few">残りわずか！</span> 残席：2名</p>
+              <a href="https://libecity.com/room_list?room_id=bQk8hL9zZCEjuMg9K3YW" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">家計簿をつけただけで終わらせない！ 家計管理の一歩先へ</h3>
+              <p class="lecture-card-info">🗓 13:05〜13:55</p>
+              <p class="lecture-card-info">🎤 講師：あつしさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats">残席：18名</p>
+              <a href="https://libecity.com/room_list?room_id=2SsJLmsRBIehhFzie2Oq" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">はじめてのCanva体験講座。不安より『できた』を持ち帰る時間</h3>
+              <p class="lecture-card-info">🗓 15:10〜16:00</p>
+              <p class="lecture-card-info">🎤 講師：ちゃげしずさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats">残席：23名</p>
+              <a href="https://libecity.com/room_list?room_id=2AX9cH0TpYkmd1m6rSve" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+          </div>
+
+          <h3 class="lecture-room-label">🏫 視聴覚室</h3>
+          <div class="lecture-cards">
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">不安があっても大丈夫😊初心者のためのインスタスタート講座</h3>
+              <p class="lecture-card-info">🗓 9:00〜10:50</p>
+              <p class="lecture-card-info">🎤 講師：Rikoさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats">残席：15名</p>
+              <a href="https://libecity.com/room_list?room_id=0E6b6NEbFeZevwaGpEl7" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">メルカリで稼ぐってどうゆうこと？？</h3>
+              <p class="lecture-card-info">🗓 11:00〜11:50</p>
+              <p class="lecture-card-info">🎤 講師：じぇーんさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats">残席：30名</p>
+              <a href="https://libecity.com/room_list?room_id=PQ1h2rqpxOODHED9YR0H" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">LINE公式アカウント構築・活用セミナー</h3>
+              <p class="lecture-card-info">🗓 12:00〜13:50</p>
+              <p class="lecture-card-info">🎤 講師：どえさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats">残席：33名</p>
+              <a href="https://libecity.com/room_list?room_id=qmoiMTnI9f2BfSvXXHWd" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">本業✕副業✕佐賀リベ旅！会社員がリベで全国2000人に出会って得たもの</h3>
+              <p class="lecture-card-info">🗓 14:05〜14:55</p>
+              <p class="lecture-card-info">🎤 講師：旅するしょうさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats"><span class="badge-few">残りわずか！</span> 残席：1名</p>
+              <a href="https://libecity.com/room_list?room_id=iWKtBKdI4Qf8nOGmZOf1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+            <div class="lecture-card">
+              <h3 class="lecture-card-title">転職を始める前に。自分の"軸"を見つける価値観マップ講座</h3>
+              <p class="lecture-card-info">🗓 15:10〜16:00</p>
+              <p class="lecture-card-info">🎤 講師：ぽめろんさん</p>
+              <p class="lecture-card-info">👥 定員：48名</p>
+              <p class="lecture-card-seats">残席：17名</p>
+              <a href="https://libecity.com/room_list?room_id=YEwuiHZ7ixRNKx3SJFVc" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="concept-image">
+        <div class="container">
+          <!-- 編集しやすい画像：講義イメージ（後日差し替え時はここを更新） -->
+          <img src="images/lecturer.png" alt="講義のイメージ" class="lecture-image">
+        </div>
+      </section>
+
+      <section class="section" id="booth">
+        <div class="container">
+          <h2 class="section-title">個人ブース出店者</h2>
+          <p>個別相談や展示ブースのイメージです。</p>
+          <div class="booth-grid">
+            <!-- 編集しやすい画像：ブース1（後日差し替え時はここを更新） -->
+            <img src="images/booth-1.png" alt="個人ブース出店者1" class="booth-image">
+            <!-- 編集しやすい画像：ブース2（後日差し替え時はここを更新） -->
+            <img src="images/booth-2.png" alt="個人ブース出店者2" class="booth-image">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="signup">
+        <div class="container">
+          <h2 class="section-title">参加申し込み</h2>
+          <p>参加申込フォームは下記リンクから。内容確認後に運営側から連絡いたします。</p>
+          <!-- 編集しやすいリンク：リベシティの参加申請チャットURL（後日変更することがあればここを更新） -->
+          <a href="https://libecity.com/room_list?room_id=8QgUPKymAJGzbE2DXqFO" class="btn btn-secondary" id="registration-link" target="_blank" rel="noopener noreferrer">リベシティで参加申請する</a>
+          <p class="note">※リベシティへのログインが必要です</p>
+        </div>
+      </section>
+
+      <section class="section" id="notes">
+        <div class="container">
+          <h2 class="section-title">注意事項</h2>
+          <ul>
+            <li>参加費は当日もしくは終了後に徴収予定（200円程度）です。</li>
+            <li>キャンセルは事前連絡をお願いいたします。</li>
+            <li>写真撮影、SNS等での公開にご同意ください（不可の場合は事前相談）。</li>
+            <li>会場のルールを守り、安全にご参加ください。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="organizers">
+        <div class="container">
+          <h2 class="section-title">主催者</h2>
+          <p>ご質問は運営までお気軽にどうぞ。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 SAGAそう</p>
+      </div>
+    </footer>
+  </body>
+</html>
