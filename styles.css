@@ -126,6 +126,12 @@ body {
   font-weight: 700;
 }
 
+.map-link-inline {
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
 .section {
   padding: 2rem 0;
   background: var(--bg);
