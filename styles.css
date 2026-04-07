@@ -53,11 +53,28 @@ body {
   margin-bottom: 1rem;
   border-radius: 12px;
   position: relative;
+  filter: saturate(1.5) contrast(1.1);
 }
 
-.site-title, .site-subtitle, .btn {
+.site-title, .site-subtitle, .btn, .greeting-message {
   position: relative;
   z-index: 2;
+}
+
+.greeting-message {
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin: 1rem auto 1.5rem;
+  max-width: 640px;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.greeting-message p {
+  margin: 0.5rem 0;
 }
 
 .site-title {
