@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAGAでSAGAそう｜大規模オフ会 in 佐賀</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <header class="site-header">
@@ -115,18 +117,80 @@
               <a href="https://libecity.com/room_list?room_id=qmoiMTnI9f2BfSvXXHWd" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
             </div>
             <div class="lecture-card">
-              <h3 class="lecture-card-title">本業✕副業✕佐賀リベ旅！会社員がリベで全国2000人に出会って得たもの</h3>
-              <p class="lecture-card-info">🗓 14:05〜14:55</p>
-              <p class="lecture-card-info">🎤 講師：旅するしょうさん</p>
-              <a href="https://libecity.com/room_list?room_id=iWKtBKdI4Qf8nOGmZOf1" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
-            </div>
-            <div class="lecture-card">
               <h3 class="lecture-card-title">転職を始める前に。自分の"軸"を見つける価値観マップ講座</h3>
               <p class="lecture-card-info">🗓 15:10〜16:00</p>
               <p class="lecture-card-info">🎤 講師：ぽめろんさん</p>
               <a href="https://libecity.com/room_list?room_id=YEwuiHZ7ixRNKx3SJFVc" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">申し込む</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="hohoemi">
+        <div class="container">
+          <h2 class="section-title">🌸 ほほえみ館 サテライト会場</h2>
+          <div class="venue-card">
+            <p class="venue-intro">メイン会場の<strong>メートプラザ佐賀</strong>に加え、<strong>ほほえみ館</strong>でもオフ会を同時開催します。<br>気軽に立ち寄って、主催者のみなさんと交流できるサテライト会場です。</p>
+            <div class="venue-info-grid">
+              <div class="venue-info-item">
+                <span class="venue-info-label">会場名</span>
+                <span class="venue-info-value">ほほえみ館</span>
+              </div>
+              <div class="venue-info-item">
+                <span class="venue-info-label">オフ会開催室</span>
+                <span class="venue-info-value">趣味の講座室</span>
+              </div>
+              <div class="venue-info-item">
+                <span class="venue-info-label">休憩スペース</span>
+                <span class="venue-info-value">音楽演劇室</span>
+              </div>
+              <div class="venue-info-item">
+                <span class="venue-info-label">開催日時</span>
+                <span class="venue-info-value">4月18日(土) 13:00〜16:00</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="lecture-room-label">📅 オフ会タイムテーブル</h3>
+          <div class="timetable">
+            <div class="timetable-row timetable-head">
+              <div class="tt-time">時間</div>
+              <div class="tt-host">主催者</div>
+              <div class="tt-content">内容</div>
+              <div class="tt-seats">定員</div>
+            </div>
+            <div class="timetable-row">
+              <div class="tt-time">13:00〜13:30</div>
+              <div class="tt-host">じぇーんさん</div>
+              <div class="tt-content">クロードコワーク</div>
+              <div class="tt-seats">5名程度</div>
+            </div>
+            <div class="timetable-row">
+              <div class="tt-time">14:00〜14:30</div>
+              <div class="tt-host">こうじろうさん</div>
+              <div class="tt-content">ゆるFIREカフェ</div>
+              <div class="tt-seats">5名</div>
+            </div>
+            <div class="timetable-row">
+              <div class="tt-time">14:00〜14:30</div>
+              <div class="tt-host">じぇーんさん</div>
+              <div class="tt-content">せどり</div>
+              <div class="tt-seats">8名</div>
+            </div>
+            <div class="timetable-row">
+              <div class="tt-time">14:10〜14:30</div>
+              <div class="tt-host">MASHさん</div>
+              <div class="tt-content">Canva</div>
+              <div class="tt-seats">5名</div>
+            </div>
+            <div class="timetable-row">
+              <div class="tt-time">15:00〜15:30</div>
+              <div class="tt-host">どえさん</div>
+              <div class="tt-content">ゆるっと雑談会</div>
+              <div class="tt-seats">10名程度</div>
+            </div>
+          </div>
+          <p class="note">※ 音楽演劇室は休憩スペースとしてご自由にお使いいただけます。</p>
         </div>
       </section>
 
@@ -198,5 +262,29 @@
         <p>© 2026 SAGAでSAGAそう＠HP制作えび🍤オンライン秘書</p>
       </div>
     </footer>
+    <script>
+      // Scroll-triggered fade-in animations
+      document.addEventListener('DOMContentLoaded', () => {
+        const targets = document.querySelectorAll('.section, .hero');
+        targets.forEach(section => {
+          const title = section.querySelector('.section-title');
+          const cards = section.querySelectorAll('.lecture-card, .image-card, .booth-image, .news-item, .event-details li');
+          if (title) title.classList.add('fade-up');
+          cards.forEach(card => card.classList.add('fade-up'));
+          const cardParent = section.querySelector('.lecture-cards, .image-cards, .booth-grid, .news-list, .event-details');
+          if (cardParent) cardParent.classList.add('stagger');
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+      });
+    </script>
   </body>
 </html>
