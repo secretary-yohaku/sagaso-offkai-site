@@ -765,20 +765,39 @@ li {
 }
 
 .news-item {
-  padding: 0.85rem 1rem;
   border-bottom: 1px solid rgba(212, 162, 78, 0.15);
   font-size: 0.92rem;
-  transition: background 0.2s ease;
-  border-radius: var(--radius-sm);
   margin-bottom: 0;
-}
-
-.news-item:hover {
-  background: rgba(212, 162, 78, 0.05);
+  padding: 0;
 }
 
 .news-item:last-child {
   border-bottom: none;
+}
+
+.news-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-sm);
+  transition: background 0.25s ease, transform 0.25s ease, padding 0.25s ease;
+}
+
+.news-link:hover {
+  background: linear-gradient(90deg, rgba(245, 198, 208, 0.2) 0%, rgba(212, 162, 78, 0.08) 100%);
+  padding-left: 1.2rem;
+}
+
+.news-link:hover .news-arrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+.news-link:hover .news-text {
+  color: #b8456a;
 }
 
 .news-date {
@@ -787,8 +806,40 @@ li {
   color: var(--gold);
   font-weight: 700;
   font-size: 0.85rem;
-  margin-right: 0.6rem;
   font-family: "Zen Maru Gothic", sans-serif;
+  flex-shrink: 0;
+}
+
+.news-text {
+  flex: 1;
+  color: var(--text);
+  transition: color 0.25s ease;
+}
+
+.news-arrow {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 0.5;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .news-link {
+    flex-wrap: wrap;
+    gap: 0.3rem 0.6rem;
+  }
+  .news-date {
+    min-width: auto;
+  }
+  .news-text {
+    flex-basis: 100%;
+    order: 3;
+  }
+  .news-arrow {
+    margin-left: auto;
+  }
 }
 
 /* ─── Signup ─── */
