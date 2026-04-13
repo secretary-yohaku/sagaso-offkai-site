@@ -1,0 +1,31 @@
+# 環境変数・機密情報
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# エディタ・IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ログ・一時ファイル
+*.log
+*.tmp
+.cache/
+
+# Claude Code ローカル設定
+.claude/scheduled_tasks.lock
