@@ -355,6 +355,175 @@ body {
   color: var(--teal-light);
 }
 
+/* ─── Access ─── */
+.access-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.access-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.access-card-title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #b8456a;
+  margin: 0 0 0.8rem;
+}
+
+.access-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.access-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #f5c6d0, #f8d8df);
+  color: #4a2030;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 900;
+  font-size: 0.95rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.access-step p {
+  margin: 0;
+  line-height: 1.75;
+  font-size: 0.92rem;
+}
+
+.accent {
+  color: #b8456a;
+}
+
+.access-walk {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.75;
+}
+
+.access-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+}
+
+.access-info-list li {
+  padding: 0.35rem 0 0.35rem 1.2rem;
+  position: relative;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.access-info-list li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: #f5c6d0;
+  font-size: 0.55rem;
+  top: 0.65rem;
+}
+
+/* ─── Bus Timetable ─── */
+.bus-tables {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.bus-table-wrap {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.bus-table-title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #b8456a;
+  margin: 0 0 0.3rem;
+}
+
+.bus-table-sub {
+  margin: 0 0 0.8rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.bus-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.bus-table th {
+  background: linear-gradient(135deg, #f5c6d0, #f8d8df);
+  color: #4a2030;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  padding: 0.55rem 0.8rem;
+  text-align: left;
+  border-bottom: 2px solid rgba(184, 69, 106, 0.2);
+}
+
+.bus-table td {
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid rgba(212, 162, 78, 0.12);
+}
+
+.bus-table td:first-child {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  color: var(--navy-deep);
+  white-space: nowrap;
+  width: 4em;
+}
+
+.bus-table td:last-child {
+  color: var(--text);
+  letter-spacing: 0.1em;
+}
+
+.bus-table tbody tr:hover {
+  background: rgba(245, 198, 208, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .access-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bus-tables {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ─── Concept ─── */
 .concept-card {
   background: linear-gradient(135deg, #fffbf0 0%, #fff6e0 100%);
