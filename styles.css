@@ -355,6 +355,19 @@ body {
   color: var(--teal-light);
 }
 
+/* ─── Map Embed ─── */
+.map-embed {
+  margin: 1rem 0 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--card-border);
+}
+
+.map-embed iframe {
+  display: block;
+}
+
 /* ─── Access ─── */
 .access-grid {
   display: grid;
