@@ -355,6 +355,73 @@ body {
   color: var(--teal-light);
 }
 
+/* ─── Venue Floor Map ─── */
+.venue-floor-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  margin: 0.8rem 0 1.2rem;
+}
+
+.venue-floor-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.2rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.venue-floor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.venue-floor-card h4 {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #b8456a;
+  margin: 0 0 0.4rem;
+}
+
+.venue-floor-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.venue-floor-card ul {
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
+}
+
+.venue-floor-card li {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.2rem;
+}
+
+.venue-floor-card.floor-highlight {
+  background: linear-gradient(135deg, #fff5f8 0%, #fff9f0 100%);
+  border-left: 4px solid #b8456a;
+}
+
+.venue-floor-note {
+  margin-top: 0.5rem !important;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem !important;
+  color: #b8456a !important;
+}
+
+@media screen and (min-width: 768px) {
+  .venue-floor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ─── Map Embed ─── */
 .map-embed {
   margin: 1rem 0 1.5rem;
